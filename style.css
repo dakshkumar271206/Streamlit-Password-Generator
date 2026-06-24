@@ -1,0 +1,43 @@
+/* Target the main background */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #0a0f18 0%, #111827 100%);
+    color: #f3f4f6;
+}
+
+/* Style the Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #0f172a;
+    border-right: 1px solid #1e293b;
+}
+
+/* Make the generated password look like terminal code */
+code {
+    color: #10b981 !important; /* Neon Green */
+    background-color: rgba(16, 185, 129, 0.1) !important;
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    padding: 1.5rem !important;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 8px rgba(16, 185, 129, 0.4);
+}
+
+/* Style the progress bar for the Entropy Meter */
+.stProgress > div > div > div > div {
+    background-image: linear-gradient(to right, #ef4444, #eab308, #10b981);
+}
+
+/* Add a glowing pulse animation to the password box */
+@keyframes hackerPulse {
+    0% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(16, 185, 129, 0.2); }
+}
+
+code {
+    animation: hackerPulse 2s infinite;
+    transition: all 0.3s ease;
+}
+
