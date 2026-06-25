@@ -1,20 +1,19 @@
-Description:
-A fast, interactive web application built with Python and Streamlit to generate secure, robust passwords on the fly. This tool provides a clean UI for users to customize their password entropy based on strict security requirements.
+ 🔐 Vault: Secure Password Generator
 
-🚀 Key Features
+An interactive, fast, and cryptographically secure password generator built with Python and Streamlit. This tool provides a sleek, dark-themed UI that allows users to generate robust passwords with absolute granular control over complexity and entropy.
 
-Fully Customizable: Adjust password length (from 6 to 64 characters) using an intuitive slider.
+ 🚀 Key Features
 
-Granular Control: Toggle uppercase, lowercase, digits, and special symbols to match specific password policies.
+* **Complete Customization:** Use the interactive slider to adjust password length anywhere from 6 to 64 characters.
+* **Granular Policy Control:** Easily toggle the inclusion of uppercase letters, lowercase letters, digits, and special symbols to meet strict password requirements.
+* **Guaranteed Complexity:** The core algorithm ensures that at least one character from every selected category is explicitly included in the final output—bypassing common "must include at least one symbol/number" errors.
+* **Real-Time Strength Analysis:** Calculates and displays the mathematical entropy of the generated password, complete with a visual strength meter (Weak, Moderate, Strong).
+* **Instant Export:** One-click download feature allows you to export your newly generated password directly to a secure `.txt` file.
+* **Modern UI:** Features a sleek dark-gradient interface with neon accents, Lottie animations, and a secure "Vault" aesthetic.
 
-Guaranteed Complexity: The core algorithm ensures that at least one character from every selected pool is explicitly included in the final output.
+ 🛠️ Tech Stack
 
-Quick Export: Download the generated password directly as a .txt file for immediate, secure use.
-
-🛠️ Tech Stack
-
-Language: Python
-
-Frontend Framework: Streamlit
-
-Standard Libraries: random, string
+* **Language:** Python 3.x
+* **Frontend Framework:** Streamlit
+* **Security & Math:** `secrets`, `math`, `random` (Standard Libraries)
+* **Styling:** Custom CSS Injection
